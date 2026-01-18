@@ -12,15 +12,16 @@ curl -fsSL https://raw.githubusercontent.com/slyang-git/x-go-releases/main/insta
 
 The script installs `xcli` to `/usr/local/bin` (uses `sudo` if needed).
 
-## Database
-
-After downloading, the database is stored in the `~/xcli/` directory.
 
 ## Quick Start
 
 After installation, run `xcli run` to start the system. This will launch X data scraping and a web interface at http://localhost:5056.
 
 For first-time setup, visit the initialization page and copy a HomeTimeline cURL command from the X platform to complete initialization.
+
+## Database
+
+After launch, the database is stored in the `~/xcli/` directory.
 
 ## Supported platforms
 
