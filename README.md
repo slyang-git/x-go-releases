@@ -26,9 +26,10 @@ For first-time setup:
 
 3. Filter requests by the "HomeTimeline" keyword.
 4. Copy the cURL command of the request.
+![Initialization Page](docs/02.png)
+
 5. Return to the localhost:5056 initialization page, paste the cURL command, and save to complete initialization.
 
-![Initialization Page](docs/02.png)
 
 ## Database
 
