@@ -37,9 +37,18 @@ tmpdir="$(mktemp -d)"
 trap 'rm -rf "$tmpdir"' EXIT
 
 if command -v curl >/dev/null 2>&1; then
-  curl -fsSL -o "$tmpdir/$BIN_NAME" "$url"
+  http_status=$(curl -sSL -o "$tmpdir/$BIN_NAME" -w "%{http_code}" "$url" || true)
+  if [ "$http_status" != "200" ]; then
+    echo "No release asset for ${os}/${arch}. Platform not supported or not published yet." >&2
+    echo "Tried: $url" >&2
+    exit 1
+  fi
 elif command -v wget >/dev/null 2>&1; then
-  wget -qO "$tmpdir/$BIN_NAME" "$url"
+  if ! wget -qO "$tmpdir/$BIN_NAME" "$url"; then
+    echo "No release asset for ${os}/${arch}. Platform not supported or not published yet." >&2
+    echo "Tried: $url" >&2
+    exit 1
+  fi
 else
   echo "Missing curl or wget" >&2
   exit 1
