@@ -28,7 +28,7 @@ For first-time setup:
 4. Copy the cURL command of the request.
 ![Initialization Page](docs/02.png)
 
-1. Return to the localhost:5056 initialization page, paste the cURL command, and save to complete initialization.
+1. Return to the http://localhost:5056 initialization page, paste the cURL command, and save to complete initialization.
 
 
 ## Database
