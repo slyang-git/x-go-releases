@@ -27,9 +27,9 @@ For first-time setup:
 
 4. Copy the cURL command of the request.
 ![Initialization Page](docs/02.png)
-
-1. Return to the http://localhost:5056 initialization page, paste the cURL command, and save to complete initialization.
-
+5. Return to the http://localhost:5056 initialization page, paste the cURL command, and save to complete initialization.
+6. After initialization, you can use the web interface to manage your X data.
+![Index Page](docs/03.png)
 
 ## Database
 
