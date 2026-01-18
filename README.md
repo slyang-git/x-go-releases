@@ -22,13 +22,13 @@ For first-time setup:
 1. Log in to https://x.com in the Chrome browser.
 2. Open Developer Tools (F12), switch to the Network tab.
 
+3. Filter requests by the "HomeTimeline" keyword.
 ![Network Tab](docs/01.png)
 
-3. Filter requests by the "HomeTimeline" keyword.
 4. Copy the cURL command of the request.
 ![Initialization Page](docs/02.png)
 
-5. Return to the localhost:5056 initialization page, paste the cURL command, and save to complete initialization.
+1. Return to the localhost:5056 initialization page, paste the cURL command, and save to complete initialization.
 
 
 ## Database
